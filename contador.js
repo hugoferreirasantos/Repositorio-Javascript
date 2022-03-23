@@ -6,7 +6,7 @@ function tempconvert(){
     var Celsius = document.getElementById('Celsius').value;
 
     if(isNaN(Fahrenheit) || isNaN(Celsius)){
-        alert("Digite um valor numérico");
+        alert('Digite um valor válido ');
         return
     }else if(Fahrenheit === ""){
        Fahrenheit = (parseFloat(Celsius) * 1.8) + 32;
@@ -22,3 +22,5 @@ function clearform(){
     document.getElementById('Fahrenheit').value = "";
     document.getElementById('Celsius').value = "";
 }
+
+
